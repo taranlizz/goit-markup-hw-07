@@ -1,31 +1,22 @@
-.button {
-  display: inline-block;
-  font-size: 16px;
-  font-family: inherit;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  font-weight: 500;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .menu-open-btn {
+  padding: 0;
   background-color: transparent;
   border: none;
   margin-left: auto;
 
   .menu-icon-open {
     stroke: currentColor;
-    width: 32px;
-    height: 22px;
+    width: 30px;
+    height: 19px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 
 .menu-close-btn {
   @include centeredFlex();
+  padding: 0;
   width: 24px;
   height: 24px;
   margin-left: auto;
@@ -39,4 +30,21 @@
   fill: currentColor;
   width: 8px;
   height: 8px;
+}
+
+.hero-btn {
+  @extend %button;
+  min-width: 170px;
+  padding: 16px 32px;
+  background-color: $accent;
+  color: $hero-text-clr;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @media screen and (min-width: $desktop) {
+    transition: background-color $transition;
+    &:is(:hover, :focus) {
+      background-color: $active-state-clr;
+    }
+  }
 }
