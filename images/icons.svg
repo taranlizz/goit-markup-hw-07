@@ -73,5 +73,8 @@
     <symbol id="icon-telegram" viewBox="0 0 24 20" >
       <path d="M24 0 0 11.25l7.67 2.367L19.5 4.375l-8.998 10.116.007.003-.009-.003V20l4.301-4.182 5.45 1.682L24 0Z"/>
     </symbol>
+    <symbol id="icon-burger" viewBox="0 0 47 32">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"></path>
+    </symbol>
   </defs>
 </svg>
