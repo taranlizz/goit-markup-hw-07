@@ -141,7 +141,7 @@ ul {
 }
 
 .menu-icon-close {
-  fill: #2e2f42;
+  fill: currentColor;
   width: 8px;
   height: 8px;
 }
