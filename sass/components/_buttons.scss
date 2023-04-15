@@ -5,7 +5,7 @@
   margin-left: auto;
 
   .menu-icon-open {
-    stroke: currentColor;
+    stroke: $main-txt-clr;
     width: 30px;
     height: 19px;
   }
@@ -27,7 +27,7 @@
 }
 
 .menu-icon-close {
-  fill: currentColor;
+  fill: $main-txt-clr;
   width: 8px;
   height: 8px;
 }
