@@ -6,14 +6,12 @@
 }
 
 %section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-%text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 %button {
@@ -25,4 +23,17 @@
   font-weight: 500;
   border-radius: 4px;
   cursor: pointer;
+}
+
+%text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: $second-txt-clr;
+}
+
+%subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
