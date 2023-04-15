@@ -1,0 +1,42 @@
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-open-btn {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+
+  .menu-icon-open {
+    stroke: currentColor;
+    width: 32px;
+    height: 22px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-close-btn {
+  @include centeredFlex();
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  background-color: transparent;
+  border: 1px solid $light-accent;
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+
+.menu-icon-close {
+  fill: currentColor;
+  width: 8px;
+  height: 8px;
+}

@@ -1,0 +1,19 @@
+.menu-soc-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-soc-link {
+  @extend %link;
+  @include centeredFlex();
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $accent;
+}
+
+.menu-soc-icon {
+  width: 24px;
+  height: 24px;
+  fill: $main-icon-clr;
+}
