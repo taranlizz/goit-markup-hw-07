@@ -37,7 +37,7 @@
   min-width: 170px;
   padding: 16px 32px;
   background-color: $accent;
-  color: $hero-text-clr;
+  color: $third-text-clr;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -47,4 +47,16 @@
       background-color: $active-state-clr;
     }
   }
+}
+
+.footer-form-btn {
+  @extend %button;
+  @include centeredFlex($type: inline-flex);
+  gap: 16px;
+  min-width: 165px;
+  height: 40px;
+  background-color: $accent;
+  color: $third-text-clr;
+  fill: currentColor;
+  border: none;
 }

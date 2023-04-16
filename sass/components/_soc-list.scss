@@ -1,17 +1,20 @@
 .menu-soc-list,
-.team-soc-list {
+.team-soc-list,
+.footer-soc-list {
   display: flex;
   justify-content: space-between;
 }
 
 .menu-soc-item,
-.team-soc-item {
+.team-soc-item,
+.footer-soc-item {
   width: 40px;
   height: 40px;
 }
 
 .menu-soc-link,
-.team-soc-link {
+.team-soc-link,
+.footer-soc-link {
   @extend %link;
   @include centeredFlex();
   width: 100%;
@@ -20,7 +23,8 @@
   background-color: $accent;
 }
 
-.team-soc-link {
+.team-soc-link,
+.footer-soc-link {
   @media screen and (min-width: $desktop) {
     transition: background-color $transition;
     &:is(:hover, :focus) {
@@ -29,7 +33,8 @@
   }
 }
 
-.menu-soc-icon {
+.menu-soc-icon,
+.footer-soc-icon {
   width: 24px;
   height: 24px;
   fill: $main-icon-clr;
