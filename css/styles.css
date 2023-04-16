@@ -758,7 +758,6 @@ img {
   fill: transparent;
   transition: background-color var(--transition);
 }
-
 .modal-form-checkbox:checked ~ .form-checkbox-wrapper {
   background-color: var(--active-state-color);
   fill: var(--icon-clr);
