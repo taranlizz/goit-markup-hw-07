@@ -49,8 +49,8 @@
 }
 
 .features-subtitle {
-  margin-bottom: 8px;
   @extend %title;
+  margin-bottom: 8px;
   @media screen and (min-width: $tablet) {
     text-align: initial;
   }
