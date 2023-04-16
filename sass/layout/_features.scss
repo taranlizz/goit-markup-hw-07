@@ -50,11 +50,9 @@
 
 .features-subtitle {
   margin-bottom: 8px;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  @media screen and (max-width: 767px) {
-    text-align: center;
+  @extend %title;
+  @media screen and (min-width: $tablet) {
+    text-align: initial;
   }
   @media screen and (min-width: $desktop) {
     font-weight: 500;

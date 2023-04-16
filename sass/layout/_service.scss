@@ -5,3 +5,12 @@
     padding-bottom: 120px;
   }
 }
+.service-title {
+  @extend %title;
+  margin-bottom: 72px;
+}
+
+.service-list {
+  @include centeredFlex();
+  gap: 24px;
+}
