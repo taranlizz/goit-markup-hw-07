@@ -14,7 +14,8 @@
   }
 }
 
-.menu-close-btn {
+.menu-close-btn,
+.mod-close-btn {
   @include centeredFlex();
   padding: 0;
   width: 24px;
@@ -26,13 +27,26 @@
   margin-bottom: 32px;
 }
 
-.menu-icon-close {
+.mod-close-btn {
+  background-color: #e7e9fc;
+  border-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  transition: fill $transition, background-color $transition;
+  &:is(:hover, :focus) {
+    background-color: $active-state-clr;
+    fill: $main-icon-clr;
+  }
+}
+
+.menu-icon-close,
+.mod-icon-close {
   fill: $main-txt-clr;
   width: 8px;
   height: 8px;
 }
 
-.hero-btn {
+.hero-btn,
+.modal-form-btn {
   @extend %button;
   min-width: 170px;
   padding: 16px 32px;
@@ -40,7 +54,11 @@
   color: $third-text-clr;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
+.hero-btn,
+.footer-form-btn,
+.modal-form-btn {
   @media screen and (min-width: $desktop) {
     transition: background-color $transition;
     &:is(:hover, :focus) {
@@ -59,4 +77,9 @@
   color: $third-text-clr;
   fill: currentColor;
   border: none;
+}
+
+.modal-form-btn {
+  display: block;
+  margin: 24px auto 0;
 }
